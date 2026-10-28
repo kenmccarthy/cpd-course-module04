@@ -1,0 +1,1111 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assessment that Works — SETU CPD Course</title>
+  <meta name="description" content="A practical, NFQ Level 8 guide to designing authentic, fair and meaningful assessment, for part-time and industry-based lecturers. South East Technological University (SETU).">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to course content</a>
+<!-- Inline icon sprite — line icons on a 24px grid (paths adapted from Lucide, ISC licence).
+     Use: <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-NAME"></use></svg>
+     or, from JS, Course.icon("NAME"). Add new symbols here; keep them decorative (text carries meaning). -->
+<svg xmlns="http://www.w3.org/2000/svg" class="icon-sprite" aria-hidden="true" focusable="false" style="position:absolute;width:0;height:0;overflow:hidden">
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></symbol>
+  <symbol id="i-clipboard" viewBox="0 0 24 24"><rect width="8" height="4" x="8" y="2" rx="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="M9 12h6M9 16h6"/></symbol>
+  <symbol id="i-swap" viewBox="0 0 24 24"><path d="M8 3 4 7l4 4"/><path d="M4 7h16"/><path d="m16 21 4-4-4-4"/><path d="M20 17H4"/></symbol>
+  <symbol id="i-compass" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m16.24 7.76-2.12 6.36-6.36 2.12 2.12-6.36z"/></symbol>
+  <symbol id="i-pen" viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+  <symbol id="i-check-circle" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+  <symbol id="i-wrench" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></symbol>
+  <symbol id="i-scale" viewBox="0 0 24 24"><path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="M7 21h10"/><path d="M12 3v18"/><path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"/></symbol>
+  <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></symbol>
+  <symbol id="i-sliders" viewBox="0 0 24 24"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3"/><path d="M1 14h6M9 8h6M17 16h6"/></symbol>
+  <symbol id="i-book" viewBox="0 0 24 24"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></symbol>
+  <symbol id="i-book-open" viewBox="0 0 24 24"><path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></symbol>
+  <symbol id="i-building" viewBox="0 0 24 24"><rect width="16" height="20" x="4" y="2" rx="2"/><path d="M9 22v-4h6v4"/><path d="M8 6h.01M16 6h.01M12 6h.01M12 10h.01M12 14h.01M16 10h.01M16 14h.01M8 10h.01M8 14h.01"/></symbol>
+  <symbol id="i-file" viewBox="0 0 24 24"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8M16 13H8M16 17H8"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+  <symbol id="i-calculator" viewBox="0 0 24 24"><rect width="16" height="20" x="4" y="2" rx="2"/><path d="M8 6h8"/><path d="M16 14v4M16 10h.01M12 10h.01M8 10h.01M12 14h.01M8 14h.01M12 18h.01M8 18h.01"/></symbol>
+  <symbol id="i-blocks" viewBox="0 0 24 24"><rect width="7" height="7" x="14" y="3" rx="1"/><path d="M10 21V8a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-5a1 1 0 0 0-1-1H3"/></symbol>
+  <symbol id="i-list-checks" viewBox="0 0 24 24"><path d="m3 17 2 2 4-4"/><path d="m3 7 2 2 4-4"/><path d="M13 6h8"/><path d="M13 12h8"/><path d="M13 18h8"/></symbol>
+  <symbol id="i-bulb" viewBox="0 0 24 24"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></symbol>
+  <symbol id="i-chart" viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/></symbol>
+  <symbol id="i-download" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></symbol>
+  <symbol id="i-cap" viewBox="0 0 24 24"><path d="M21.42 10.92a1 1 0 0 0-.02-1.84L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.83l8.57 3.91a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></symbol>
+  <symbol id="i-rotate" viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></symbol>
+  <symbol id="i-chevron-down" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+  <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></symbol>
+  <symbol id="i-moon" viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></symbol>
+  <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
+  <symbol id="i-arrow-left" viewBox="0 0 24 24"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></symbol>
+  <symbol id="i-arrow-down" viewBox="0 0 24 24"><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></symbol>
+  <symbol id="i-warning" viewBox="0 0 24 24"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"/><path d="M12 9v4"/><path d="M12 17h.01"/></symbol>
+</svg>
+<div class="sr-only" id="a11yStatus" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="app">
+
+  <!-- ============================ SIDEBAR ============================ -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar__brand">
+      <img class="sidebar__logo" src="assets/MONO_WHITE.png" alt="SETU — South East Technological University">
+      <p class="sidebar__kicker">CPD · Self-paced</p>
+      <h1 class="sidebar__title">Assessment that Works</h1>
+      <p class="sidebar__meta"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-clock"></use></svg> ~30 minutes · 7 sections</p>
+    </div>
+
+    <div class="progress">
+      <div class="progress__label"><span>Your progress</span><span id="progressPct">0%</span></div>
+      <div class="progress__track"><div class="progress__fill" id="progressFill"></div></div>
+    </div>
+
+    <nav aria-label="Course sections">
+      <ul class="nav" id="nav"><!-- populated by JS --></ul>
+    </nav>
+
+    <div class="sidebar__foot">
+      <button class="sidebar__theme" id="themeBtnSide" type="button">
+        <span class="sidebar__theme-icon" id="themeIcon" aria-hidden="true"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-moon"></use></svg></span> <span id="themeLabel">Toggle dark mode</span>
+      </button>
+      <p style="margin:14px 0 0">South East Technological University · A practical guide for part-time &amp; industry-based lecturers.</p>
+    </div>
+  </aside>
+  <div class="backdrop" id="backdrop" aria-hidden="true"></div>
+
+  <!-- ============================ MAIN ============================ -->
+  <div class="main">
+    <div class="topbar">
+      <button class="icon-btn" id="menuBtn" type="button" aria-label="Open course menu" aria-controls="sidebar" aria-expanded="false"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-menu"></use></svg></button>
+      <img class="topbar__logo" src="assets/MONO_WHITE.png" alt="SETU">
+      <span class="topbar__title" id="topTitle">Assessment that Works</span>
+      <button class="icon-btn" id="themeBtn" type="button" aria-label="Switch to dark mode"><span id="themeIconTop" aria-hidden="true"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-moon"></use></svg></span></button>
+    </div>
+
+    <main class="content-scroll" id="scroll" tabindex="-1"><div id="main"></div>
+
+      <!-- =================================================================
+           COURSE OVERVIEW (Rise-style front door)
+      ================================================================== -->
+      <section class="lesson lesson--overview" data-lesson="overview" data-accent="1">
+        <div class="ov-hero">
+          <span class="ov-hero__crest crest-grad" aria-hidden="true"></span>
+          <div class="ov-hero__panel u-panel grad-mesh">
+            <span class="eyebrow"><span class="u-mark" aria-hidden="true"></span> Lifelong Learning at SETU · CPD</span>
+            <h1 id="ovTitle" tabindex="-1">Assessment that Works</h1>
+            <p class="ov-hero__sub" id="ovSubtitle">Designing authentic, fair and meaningful assessment</p>
+            <p class="ov-hero__meta"><span id="ovMeta">~30 minutes · 7 sections</span> · <span id="ovPct">0%</span> complete</p>
+          </div>
+          <div class="ov-hero__side">
+            <p class="tagline" id="ovTagline">LEARN MORE.<br>GO FURTHER.</p>
+            <button class="btn btn--primary btn--lg" id="overviewCta" type="button">Start the course</button>
+          </div>
+        </div>
+        <h2 class="ov-h2" id="lessonsHeading">Lessons</h2>
+        <div class="lcards" id="lessonCards" role="list" aria-labelledby="lessonsHeading"></div>
+        <p class="ov-note">Your progress is saved automatically on this device — return to any lesson at any time.</p>
+      </section>
+
+      <!-- =================================================================
+           SECTION 1 — WELCOME  (data-lesson="0")
+      ================================================================== -->
+      <section class="lesson" data-lesson="0" data-accent="1">
+      <header class="hero">
+          <span class="hero__crest crest-grad" aria-hidden="true"></span>
+          <div class="hero__panel u-panel grad-mesh">
+            <span class="eyebrow" data-hero-eyebrow><span class="u-mark" aria-hidden="true"></span> Section 1 of 7</span>
+            <h1 tabindex="-1">Assessment that works</h1>
+            <p class="hero__meta">~2 min read</p>
+          </div>
+          <!-- Photo theme: Our People. Progress strip rendered by js/rise.js. Optional cover photo: add
+               <img class="hero__bg" src="assets/…" alt=""> as the first child of .hero -->
+          <div class="hero__side" data-hero-side></div>
+        </header>
+
+        <p class="lead">If you teach in higher education, you've probably noticed that assessment is the part of a module <strong>students care about most</strong>. It is also the part we often design last, and the part most likely to cause stress for staff and students alike.</p>
+
+        <p>In the next thirty minutes, we'll look at how to design assessment that is <strong>authentic, fair and meaningful</strong>. We'll use theory where it helps, but we'll keep returning to practical decisions you can make on your own modules this semester.</p>
+
+        <div class="card card--objectives">
+          <h2>By the end of this unit, you'll be able to:</h2>
+          <ul class="obj-list">
+            <li>Explain why assessment should be aligned with learning outcomes and teaching activities, and sized appropriately for the credits</li>
+            <li>Distinguish summative from formative assessment, and low-stakes from high-stakes assessment, and use each purposefully</li>
+            <li>Design a more authentic assessment task for your discipline</li>
+            <li>Draft a simple rubric and give feedback that students can act on</li>
+            <li>Make informed decisions about AI in your assessments</li>
+          </ul>
+        </div>
+
+        <div class="gate" data-gate></div>
+
+        <div class="callout callout--why">
+          <div class="callout__icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-target"></use></svg></div>
+          <div class="callout__body">
+            <p><strong>Pitched at NFQ Level 8.</strong> This unit is pitched at the honours bachelor degree, and we'll also look at what changes at Level 7 and Level 9. You bring something we can't supply: your own industry and professional experience. Throughout, you'll be asked to connect ideas to the workplaces your graduates enter.</p>
+          </div>
+        </div>
+
+        <div class="reflect" data-reflect="s0">
+          <div class="reflect__tag"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-pen"></use></svg> Reflection &middot; optional &middot; not scored</div>
+          <p class="reflect__prompt" id="reflect-s0">Name one assessment in your own teaching or professional life that you think worked really well. What made it work?</p>
+          <textarea aria-labelledby="reflect-s0" placeholder="Jot your thoughts here &mdash; saved only on this device&hellip;"></textarea>
+          <div class="reflect__foot">
+            <span class="reflect__note">You'll come back to this in the final reflection.</span>
+            <button class="reflect__save" type="button">Save note</button>
+          </div>
+        </div>
+
+        <div class="callout callout--tip">
+          <div class="callout__icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-clock"></use></svg></div>
+          <div class="callout__body">
+            <p><strong>Estimated time: 30 minutes.</strong> You can pause and return to this at any point &mdash; your progress is saved automatically on this device.</p>
+          </div>
+        </div>
+
+        <div class="lesson-nav">
+          <span></span>
+          <button class="btn btn--primary" data-next>Start the course <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow-right"></use></svg></button>
+        </div>
+      </section>
+
+      <!-- =================================================================
+           SECTION 2 — ALIGNMENT WITH LEARNING OUTCOMES  (data-lesson="1")
+      ================================================================== -->
+      <section class="lesson" data-lesson="1" data-accent="2">
+      <header class="hero">
+          <span class="hero__crest crest-grad" aria-hidden="true"></span>
+          <div class="hero__panel u-panel grad-mesh">
+            <span class="eyebrow" data-hero-eyebrow><span class="u-mark" aria-hidden="true"></span> Section 2 of 7</span>
+            <h1 tabindex="-1">Alignment with learning outcomes</h1>
+            <p class="hero__meta">~7 min read</p>
+          </div>
+          <div class="hero__side" data-hero-side></div>
+        </header>
+
+        <div class="statement"><span class="u-watermark" aria-hidden="true"></span><span>Start with the outcome. The most important principle in assessment design is alignment.</span></div>
+
+        <p class="lead">John Biggs called this <strong>constructive alignment</strong> (Biggs, 1996; Biggs and Tang, 2011). The idea is simple, and it has three steps.</p>
+
+        <ol class="steps">
+          <li>First, decide what students should be able to do by the end of the module &mdash; your <strong>learning outcome</strong>.</li>
+          <li>Second, design <strong>teaching and learning activities</strong> that give students practice at that.</li>
+          <li>Third, design <strong>assessment</strong> that gives students a fair chance to show that they can do it.</li>
+        </ol>
+
+        <p>If those three things don't line up, students notice. They learn very quickly that what we say matters and what we assess are different things, and they study for the assessment.</p>
+
+        <figure class="figure figure--framed fig-triangle">
+          <svg viewBox="0 0 640 300" role="img" aria-label="Constructive alignment triangle linking learning outcomes, teaching and learning activities, and assessment, with arrows between all three">
+            <defs><style>
+              .al-node{fill:var(--bg);stroke-width:2.5}
+              .al-t{font:700 13px var(--font-head);fill:var(--ink-strong);text-anchor:middle}
+              .al-arrow{stroke:var(--ink-faint);stroke-width:1.6;stroke-dasharray:5 4;fill:none}
+            </style>
+            <marker id="ar" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6" fill="var(--ink-faint)"/></marker>
+            </defs>
+            <line class="al-arrow" x1="320" y1="70" x2="140" y2="220" marker-end="url(#ar)" marker-start="url(#ar)"/>
+            <line class="al-arrow" x1="320" y1="70" x2="500" y2="220" marker-end="url(#ar)" marker-start="url(#ar)"/>
+            <line class="al-arrow" x1="170" y1="235" x2="470" y2="235" marker-end="url(#ar)" marker-start="url(#ar)"/>
+            <g>
+              <circle class="al-node" cx="320" cy="55" r="46" stroke="var(--accent)"/>
+              <text class="al-t" x="320" y="50">Learning</text>
+              <text class="al-t" x="320" y="66">outcomes</text>
+            </g>
+            <g>
+              <circle class="al-node" cx="130" cy="240" r="46" stroke="var(--slate)"/>
+              <text class="al-t" x="130" y="235">Teaching &amp;</text>
+              <text class="al-t" x="130" y="251">learning</text>
+            </g>
+            <g>
+              <circle class="al-node" cx="510" cy="240" r="46" stroke="var(--accent-ink)"/>
+              <text class="al-t" x="510" y="244">Assessment</text>
+            </g>
+          </svg>
+          <figcaption>Each corner points at the other two. Move one and the other two have to move with it.</figcaption>
+        </figure>
+
+        <div class="gate" data-gate></div>
+
+        <h2>Look at the verbs</h2>
+        <p>As we saw in an earlier unit, learning outcomes are written with action verbs, and those verbs tell you what kind of <strong>evidence</strong> you need. Bloom's taxonomy, revised by Anderson and Krathwohl (2001), is a helpful guide. If the outcome says <em>evaluate</em>, a multiple-choice quiz of recall questions won't give you the evidence. If it says <em>apply</em>, you need a task where students apply.</p>
+
+        <div class="tabs" data-tabs="levels">
+          <div class="tabs__list" role="tablist" aria-label="Assessment at NFQ levels">
+            <button class="tabs__btn" data-tab="7" role="tab" id="levelstab-7" aria-controls="levelspanel-7" aria-selected="false" tabindex="-1" type="button">Level 7</button>
+            <button class="tabs__btn is-active" data-tab="8" role="tab" id="levelstab-8" aria-controls="levelspanel-8" aria-selected="true" tabindex="0" type="button">Level 8</button>
+            <button class="tabs__btn" data-tab="9" role="tab" id="levelstab-9" aria-controls="levelspanel-9" aria-selected="false" tabindex="-1" type="button">Level 9</button>
+          </div>
+          <div class="tabs__panel" data-panel="7" role="tabpanel" id="levelspanel-7" aria-labelledby="levelstab-7" tabindex="0">
+            <span class="tabs__level">Ordinary Bachelor Degree</span>
+            <h3>Established knowledge in familiar contexts</h3>
+            <p>Outcomes tend to focus on applying established knowledge and skills in familiar contexts.</p>
+            <div class="tabs__example"><span>A task might be</span>A structured case analysis, or a guided project with clear parameters.</div>
+          </div>
+          <div class="tabs__panel is-active" data-panel="8" role="tabpanel" id="levelspanel-8" aria-labelledby="levelstab-8" tabindex="0">
+            <span class="tabs__level">Honours Bachelor Degree</span>
+            <h3>Autonomy, breadth and evaluation</h3>
+            <p>This is our focus. The QQI award standards describe graduates who can exercise considerable autonomy, work with a breadth of knowledge, and evaluate and interpret information.</p>
+            <div class="tabs__example"><span>Expect tasks such as</span>A critical analysis, a problem-based project with some ambiguity, or a professional report that needs justified recommendations.</div>
+          </div>
+          <div class="tabs__panel" data-panel="9" role="tabpanel" id="levelspanel-9" aria-labelledby="levelstab-9" tabindex="0">
+            <span class="tabs__level">Master's Degree</span>
+            <h3>Complexity, incomplete information, originality</h3>
+            <p>Here we expect graduates to deal with complexity, work with incomplete information, and contribute original thinking.</p>
+            <div class="tabs__example"><span>An assessment might be</span>A research proposal, a critical review of the literature, or a consultancy-style project for a real client.</div>
+          </div>
+        </div>
+
+        <div class="callout callout--why">
+          <div class="callout__icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-warning"></use></svg></div>
+          <div class="callout__body">
+            <p><strong>A common alignment problem.</strong> Notice that the verbs, and the amount of independence, rise through the levels. A Level 8 module is often assessed with Level 7 tasks &mdash; usually because they are quicker to mark.</p>
+          </div>
+        </div>
+
+        <div class="gate" data-gate></div>
+
+        <div class="match" data-match="outcome" data-perfect="Exactly. The verb in the outcome points to the evidence you need.">
+          <div class="kc__tag"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-target"></use></svg> Quick check &middot; Match each outcome to the assessment that gives the best evidence</div>
+          <p style="color:var(--ink-soft)">Drag each assessment onto the outcome it would evidence best &mdash; or select an assessment, then choose a box. Three of the nine are the best fit for an outcome. The rest don't give the evidence, so they belong in the last box.</p>
+          <div class="match__grid">
+            <div>
+              <div class="match__col-title">Assessments</div>
+              <div class="tokens" id="outcomeTokens">
+                <div class="token" draggable="true" role="button" tabindex="0" data-token="a1" data-level="weak">Recall quiz</div>
+                <div class="token" draggable="true" role="button" tabindex="0" data-token="a2" data-level="o2">Case-based task</div>
+                <div class="token" draggable="true" role="button" tabindex="0" data-token="a3" data-level="weak">Multiple-choice test</div>
+                <div class="token" draggable="true" role="button" tabindex="0" data-token="a4" data-level="o1">Comparative critical analysis</div>
+                <div class="token" draggable="true" role="button" tabindex="0" data-token="a5" data-level="weak">Essay on history of the procedure</div>
+                <div class="token" draggable="true" role="button" tabindex="0" data-token="a6" data-level="o3">Written briefing note to a client</div>
+                <div class="token" draggable="true" role="button" tabindex="0" data-token="a7" data-level="weak">Group presentation of a summary</div>
+                <div class="token" draggable="true" role="button" tabindex="0" data-token="a8" data-level="weak">Reflective diary only</div>
+                <div class="token" draggable="true" role="button" tabindex="0" data-token="a9" data-level="weak">Lab notebook</div>
+              </div>
+            </div>
+            <div>
+              <div class="match__col-title">Learning outcome</div>
+              <div class="drops">
+                <div class="drop" data-accept="o1"><button class="drop__target" type="button" aria-label="Place the selected assessment on: Critically evaluate two competing approaches to&hellip;">&ldquo;Critically evaluate two competing approaches to&hellip;&rdquo;</button><span class="drop__slot"></span></div>
+                <div class="drop" data-accept="o2"><button class="drop__target" type="button" aria-label="Place the selected assessment on: Apply the standard procedure to&hellip;">&ldquo;Apply the standard procedure to&hellip;&rdquo;</button><span class="drop__slot"></span></div>
+                <div class="drop" data-accept="o3"><button class="drop__target" type="button" aria-label="Place the selected assessment on: Justify recommendations to a non-specialist audience">&ldquo;Justify recommendations to a non-specialist audience&rdquo;</button><span class="drop__slot"></span></div>
+                <div class="drop" data-accept="weak"><button class="drop__target" type="button" aria-label="Place the selected assessment in: Weak evidence for all three outcomes">Weak evidence for all three outcomes</button><span class="drop__slot"></span></div>
+              </div>
+            </div>
+          </div>
+          <div class="match__actions">
+            <button class="btn btn--primary btn--sm" data-check>Check my answers</button>
+            <button class="btn btn--ghost btn--sm" data-reset>Reset</button>
+            <span class="kc__score" data-matchscore role="status"></span>
+          </div>
+        </div>
+
+        <div class="reflect" data-reflect="s1">
+          <div class="reflect__tag"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-pen"></use></svg> Reflection &middot; not scored</div>
+          <p class="reflect__prompt" id="reflect-s1">Take one outcome from a module you teach, or know well. Write down the verb. Does your current assessment really require students to do what the verb says?</p>
+          <textarea aria-labelledby="reflect-s1" placeholder="Jot your thoughts here &mdash; saved only on this device&hellip;"></textarea>
+          <div class="reflect__foot">
+            <span class="reflect__note">Just for your own thinking.</span>
+            <button class="reflect__save" type="button">Save note</button>
+          </div>
+        </div>
+
+        <div class="callout callout--tip">
+          <div class="callout__icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-list-checks"></use></svg></div>
+          <div class="callout__body">
+            <p><strong>Practical tip: run an alignment check.</strong> Make a simple table with outcomes down the side and assessments across the top. If an outcome has no assessment, it isn't being assessed. If an assessment has no outcome, it may not be needed.</p>
+          </div>
+        </div>
+
+        <div class="gate" data-gate></div>
+
+        <h2>How big should the assessment be?</h2>
+        <p class="lead">You've now aligned your assessment with your outcomes. One more alignment question is easy to overlook: <strong>is the assessment the right size for the credits?</strong></p>
+
+        <p>Every module carries ECTS credits, and credits describe the total learner effort expected. That includes lectures, labs, independent study, preparing for assessment and sitting it. Under the European Credit Transfer and Accumulation System, one credit is generally taken to represent about <strong>20 to 25 hours</strong> of learner effort (European Commission, 2015).</p>
+
+        <div class="flipgrid flipgrid--3" data-flip="credits" role="group" aria-label="Credits and total learner effort">
+          <button class="flip" type="button" aria-expanded="false">
+            <span class="flip__front">A 5-credit module</span>
+            <span class="flip__hint">Select to reveal the hours</span>
+            <span class="flip__back" hidden>represents roughly <strong>100 to 125 hours</strong> of total effort.</span>
+          </button>
+          <button class="flip" type="button" aria-expanded="false">
+            <span class="flip__front">A 10-credit module</span>
+            <span class="flip__hint">Select to reveal the hours</span>
+            <span class="flip__back" hidden>represents roughly <strong>200 to 250 hours</strong>.</span>
+          </button>
+          <button class="flip" type="button" aria-expanded="false">
+            <span class="flip__front">A 15-credit module</span>
+            <span class="flip__hint">Select to reveal the hours</span>
+            <span class="flip__back" hidden>represents roughly <strong>300 to 375 hours</strong>.</span>
+          </button>
+        </div>
+
+        <figure class="figure figure--framed fig-effort">
+          <svg viewBox="0 0 660 190" role="img" aria-label="Stacked bar for a 5-credit module of about 125 hours: class contact (36 hours), independent study, and assessment preparation and completion">
+            <defs>
+              <style>
+                .ef-c{fill:var(--slate)}
+                .ef-i{fill:var(--accent-tint);stroke:var(--accent);stroke-width:1.4}
+                .ef-a{fill:var(--accent)}
+                .ef-t{fill:var(--ink-strong);font:700 13px var(--font-head)}
+                .ef-s{fill:var(--ink-soft);font:12px var(--font-body)}
+                .ef-w{fill:#fff;font:700 12.5px var(--font-head)}
+                .ef-b{stroke:var(--ink-faint);stroke-width:1.2;fill:none}
+              </style>
+            </defs>
+            <text class="ef-t" x="20" y="26">A 5-credit module &middot; about 125 hours of total learner effort</text>
+            <rect class="ef-c" x="20" y="44" width="177" height="52" rx="8"/>
+            <rect class="ef-i" x="199" y="44" width="233" height="52"/>
+            <rect class="ef-a" x="434" y="44" width="206" height="52" rx="8"/>
+            <text class="ef-w" x="34" y="66">Class contact</text>
+            <text class="ef-w" x="34" y="84" style="font-weight:600">36 hours</text>
+            <text class="ef-t" x="213" y="66" style="font-size:12.5px">Independent study</text>
+            <text class="ef-w" x="448" y="66">Assessment preparation</text>
+            <text class="ef-w" x="448" y="84" style="font-weight:600">and completion</text>
+            <path class="ef-b" d="M20 112 L20 120 L640 120 L640 112"/>
+            <text class="ef-s" x="330" y="138" style="text-anchor:middle">Everything a student is expected to do for this module sits inside this one bar</text>
+            <text class="ef-s" x="20" y="170">Illustrative proportions only &mdash; they vary by module.</text>
+          </svg>
+          <figcaption>Assessment effort is only one part of the total.</figcaption>
+        </figure>
+
+        <p>If a student has about 125 hours for the whole module and attends 36 hours of class, the time left for reading, practice and assessment is fairly limited. <strong>A task that realistically needs 60 hours of work is probably too big for that module.</strong></p>
+
+        <div class="gate" data-gate></div>
+
+        <h3>Three practical guidelines</h3>
+        <ol class="steps">
+          <li><strong>Count the student's hours, not yours.</strong> Estimate how long a typical student needs to complete the task, including reading, drafting and revising. Then ask whether that fits the credit value. Ask a colleague, or a recent student, to sanity-check your estimate.</li>
+          <li><strong>Keep the number of assessments proportionate.</strong> As a rule of thumb, a 5-credit module often works well with one to three assessment points. More than that tends to create over-assessment, with students bunching deadlines and staff marking more than the module can support. A 10 or 15-credit module can sustain more variety.</li>
+          <li><strong>Match size to level as well as credits.</strong> At Level 8, a smaller number of richer tasks usually works better than many short ones, because the outcomes call for analysis and evaluation. At Level 9, expect larger, more open tasks with more independence, which also means being realistic about the hours available. At Level 7, shorter, more structured tasks with clearer scaffolding are common.</li>
+        </ol>
+
+        <div class="card">
+          <h2>A worked example</h2>
+          <p>Imagine a 5-credit Level 8 module of about 125 hours. A sensible profile might be:</p>
+          <div class="deflist">
+            <div class="deflist__row"><div class="deflist__term">Weekly activity <span class="tag">10%</span></div><div class="deflist__desc">Low-stakes and formative.</div></div>
+            <div class="deflist__row"><div class="deflist__term">Case analysis <span class="tag">40%</span></div><div class="deflist__desc">1,500 words.</div></div>
+            <div class="deflist__row"><div class="deflist__term">Applied project or presentation <span class="tag">50%</span></div><div class="deflist__desc">Short and applied.</div></div>
+          </div>
+          <p style="margin-bottom:0">Compare that with five separate essays plus a final exam, which would be hard for students to complete well in the same time.</p>
+        </div>
+
+        <div class="callout callout--tip">
+          <div class="callout__icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-file"></use></svg></div>
+          <div class="callout__body">
+            <p><strong>A note on word counts.</strong> Many institutions give indicative word counts or equivalencies, such as a typical number of words for an essay, or how an exam or presentation equates to written work. These vary between institutions and programmes. Check your programme document and your institution's assessment regulations, and make sure your assessment strategy is consistent with them.</p>
+          </div>
+        </div>
+
+        <div class="gate" data-gate></div>
+
+        <div class="kc" data-kc="kc1b" data-type="single">
+          <div class="kc__tag"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"></use></svg> Knowledge check &middot; Scenario</div>
+          <p class="kc__q" id="kcq-kc1b">A lecturer plans four assignments, each needing about 30 hours of student work, for a 5-credit module. What is the best response?</p>
+          <div class="kc__options" role="group" aria-labelledby="kcq-kc1b">
+            <button class="opt" data-opt="A"><span class="opt__mark"><span class="opt__letter">A</span></span> Keep it, because Level 8 students should work hard</button>
+            <button class="opt" data-opt="B" data-correct><span class="opt__mark"><span class="opt__letter">B</span></span> Reduce the load, because 120 hours of assessment work leaves almost no time for other learning</button>
+            <button class="opt" data-opt="C"><span class="opt__mark"><span class="opt__letter">C</span></span> Add a fifth assignment for variety</button>
+            <button class="opt" data-opt="D"><span class="opt__mark"><span class="opt__letter">D</span></span> Make all four assignments multiple-choice tests</button>
+          </div>
+          <div class="kc__feedback" role="status" aria-live="polite"
+               data-good="A 5-credit module is roughly 100 to 125 hours in total, so assessment work has to be a fraction of that."
+               data-bad="Four assignments at about 30 hours each is 120 hours of assessment work alone. Against roughly 100 to 125 hours in total, that leaves almost no time for attending, reading or practising."></div>
+          <div class="kc__footer"><button class="kc__retry" type="button"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-rotate"></use></svg> Try again</button></div>
+        </div>
+
+        <div class="reflect" data-reflect="s1b">
+          <div class="reflect__tag"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-pen"></use></svg> Reflection &middot; not scored</div>
+          <p class="reflect__prompt" id="reflect-s1b">Pick one module you know well. Roughly how many hours does the assessment take a typical student? Does that fit the credits?</p>
+          <textarea aria-labelledby="reflect-s1b" placeholder="Jot your thoughts here &mdash; saved only on this device&hellip;"></textarea>
+          <div class="reflect__foot">
+            <span class="reflect__note">Just for your own thinking.</span>
+            <button class="reflect__save" type="button">Save note</button>
+          </div>
+        </div>
+
+        <div class="lesson-nav">
+          <button class="btn btn--ghost" data-prev><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow-left"></use></svg> <span class="long">Welcome</span></button>
+          <button class="btn btn--primary" data-next><span class="long">Purpose and stakes</span> <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow-right"></use></svg></button>
+        </div>
+      </section>
+      <!-- =================================================================
+           SECTION 3 — PURPOSE AND STAKES  (data-lesson="2")
+      ================================================================== -->
+      <section class="lesson" data-lesson="2" data-accent="3">
+      <header class="hero">
+          <span class="hero__crest crest-grad" aria-hidden="true"></span>
+          <div class="hero__panel u-panel grad-mesh">
+            <span class="eyebrow" data-hero-eyebrow><span class="u-mark" aria-hidden="true"></span> Section 3 of 7</span>
+            <h1 tabindex="-1">Formative, summative, low stakes and high stakes</h1>
+            <p class="hero__meta">~5 min read</p>
+          </div>
+          <div class="hero__side" data-hero-side></div>
+        </header>
+
+        <div class="statement"><span class="u-watermark" aria-hidden="true"></span><span>People often mix up two different pairs of terms. One pair is about <em>purpose</em>. The other is about <em>stakes</em>.</span></div>
+
+        <h2>The first pair is about purpose</h2>
+        <div class="deflist">
+          <div class="deflist__row">
+            <div class="deflist__term">Summative</div>
+            <div class="deflist__desc">Judges what students have achieved at the end of a period of learning. It contributes to a grade or award. This is <strong>assessment of learning</strong>.</div>
+          </div>
+          <div class="deflist__row">
+            <div class="deflist__term">Formative</div>
+            <div class="deflist__desc">Helps students and staff see where learning is, so that both can adjust. Black and Wiliam's (1998) review is the classic argument that formative assessment raises achievement. This is <strong>assessment for learning</strong>.</div>
+          </div>
+          <div class="deflist__row">
+            <div class="deflist__term">As learning</div>
+            <div class="deflist__desc">The National Forum for the Enhancement of Teaching and Learning (2017) also describes <strong>assessment as learning</strong>, where students develop their own judgement, monitoring and self-regulation.</div>
+          </div>
+        </div>
+
+        <h2>The second pair is about stakes</h2>
+        <div class="deflist">
+          <div class="deflist__row">
+            <div class="deflist__term">Low-stakes</div>
+            <div class="deflist__desc">Carries little or no weight in the final grade.</div>
+          </div>
+          <div class="deflist__row">
+            <div class="deflist__term">High-stakes</div>
+            <div class="deflist__desc">Carries a lot &mdash; for example, a final exam worth 70 per cent of a module.</div>
+          </div>
+        </div>
+
+        <div class="gate" data-gate></div>
+
+        <p class="lead">These two pairs are <strong>independent</strong>, which is why a matrix helps. A low-stakes quiz can be summative if it counts for a few marks. A high-stakes assessment can have formative value if students receive meaningful feedback they can apply later.</p>
+
+        <p>Try placing an example in each quadrant. Select a quadrant to reveal one.</p>
+
+        <div class="matrix" data-flip="matrix" role="group" aria-label="Purpose and stakes matrix: four quadrants to reveal">
+          <div class="matrix__corner" aria-hidden="true"></div>
+          <div class="matrix__col">Formative <span>assessment for learning</span></div>
+          <div class="matrix__col">Summative <span>assessment of learning</span></div>
+
+          <div class="matrix__row">Higher stakes</div>
+          <button class="flip" type="button" aria-expanded="false">
+            <span class="flip__front">?</span>
+            <span class="flip__hint">Formative, higher stakes &mdash; what belongs here?</span>
+            <span class="flip__back" hidden><strong>Formative and higher stakes</strong>A draft submission for an important project, with detailed feedback before the final mark.</span>
+          </button>
+          <button class="flip" type="button" aria-expanded="false">
+            <span class="flip__front">?</span>
+            <span class="flip__hint">Summative, higher stakes &mdash; what belongs here?</span>
+            <span class="flip__back" hidden><strong>Summative and high stakes</strong>A final exam or capstone project.</span>
+          </button>
+
+          <div class="matrix__row">Low stakes</div>
+          <button class="flip" type="button" aria-expanded="false">
+            <span class="flip__front">?</span>
+            <span class="flip__hint">Formative, low stakes &mdash; what belongs here?</span>
+            <span class="flip__back" hidden><strong>Formative and low stakes</strong>A weekly ungraded problem, or peer review of a draft.</span>
+          </button>
+          <button class="flip" type="button" aria-expanded="false">
+            <span class="flip__front">?</span>
+            <span class="flip__hint">Summative, low stakes &mdash; what belongs here?</span>
+            <span class="flip__back" hidden><strong>Summative and low stakes</strong>A short graded weekly quiz, 5% each.</span>
+          </button>
+        </div>
+
+        <div class="gate" data-gate></div>
+
+        <h2>Why does this matter?</h2>
+        <p>Too many high-stakes, summative-only assessments produce student anxiety and surface learning. Too few signals leave students unsure how they are doing until it is too late.</p>
+        <p>Nicol and Macfarlane-Dick (2006) argue that good formative assessment helps students become <strong>self-regulated learners</strong>. Their principles include:</p>
+        <ul>
+          <li>clarifying what good performance is,</li>
+          <li>encouraging dialogue about learning, and</li>
+          <li>giving feedback that can close the gap.</li>
+        </ul>
+
+        <div class="kc" data-kc="kc2" data-type="single">
+          <div class="kc__tag"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"></use></svg> Knowledge check</div>
+          <p class="kc__q" id="kcq-kc2">Which of these is the best example of formative assessment?</p>
+          <div class="kc__options" role="group" aria-labelledby="kcq-kc2">
+            <button class="opt" data-opt="A"><span class="opt__mark"><span class="opt__letter">A</span></span> A final exam worth 60% of the module</button>
+            <button class="opt" data-opt="B" data-correct><span class="opt__mark"><span class="opt__letter">B</span></span> A draft report returned with comments, before the final version is submitted</button>
+            <button class="opt" data-opt="C"><span class="opt__mark"><span class="opt__letter">C</span></span> A grade on a capstone project</button>
+            <button class="opt" data-opt="D"><span class="opt__mark"><span class="opt__letter">D</span></span> A pass/fail certification test</button>
+          </div>
+          <div class="kc__feedback" role="status" aria-live="polite"
+               data-good="The key is that students can still act on the feedback."
+               data-bad="Formative assessment helps students and staff see where learning is while there is still time to adjust. A draft returned with comments does that; a grade on a finished piece of work does not."></div>
+          <div class="kc__footer"><button class="kc__retry" type="button"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-rotate"></use></svg> Try again</button></div>
+        </div>
+
+        <div class="callout callout--tip">
+          <div class="callout__icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-bulb"></use></svg></div>
+          <div class="callout__body">
+            <p><strong>Practical tip: practise before the high-stakes moment.</strong> Try to make sure students get a meaningful learning opportunity before every high-stakes task. A draft, a practice run, a peer review, an in-class mini version, or an example to mark yourself all work.</p>
+          </div>
+        </div>
+
+        <div class="gate" data-gate></div>
+
+        <div class="reflect" data-reflect="s2">
+          <div class="reflect__tag"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-pen"></use></svg> Reflection &middot; industry link &middot; not scored</div>
+          <p class="reflect__prompt" id="reflect-s2">Think about your industry or professional field. How do professionals get low-stakes practice and feedback before the high-stakes moment &mdash; a client presentation, a clinical placement, an audit? How could you mirror that in your module?</p>
+          <textarea aria-labelledby="reflect-s2" placeholder="Jot your thoughts here &mdash; saved only on this device&hellip;"></textarea>
+          <div class="reflect__foot">
+            <span class="reflect__note">Just for your own thinking.</span>
+            <button class="reflect__save" type="button">Save note</button>
+          </div>
+        </div>
+
+        <div class="lesson-nav">
+          <button class="btn btn--ghost" data-prev><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow-left"></use></svg> <span class="long">Alignment with outcomes</span></button>
+          <button class="btn btn--primary" data-next><span class="long">Authentic assessment</span> <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow-right"></use></svg></button>
+        </div>
+      </section>
+
+      <!-- =================================================================
+           SECTION 4 — AUTHENTIC ASSESSMENT  (data-lesson="3")
+      ================================================================== -->
+      <section class="lesson" data-lesson="3" data-accent="1">
+      <header class="hero">
+          <span class="hero__crest crest-grad" aria-hidden="true"></span>
+          <div class="hero__panel u-panel grad-mesh">
+            <span class="eyebrow" data-hero-eyebrow><span class="u-mark" aria-hidden="true"></span> Section 4 of 7</span>
+            <h1 tabindex="-1">Authentic assessment and adult learners</h1>
+            <p class="hero__meta">~4 min read</p>
+          </div>
+          <div class="hero__side" data-hero-side></div>
+        </header>
+
+        <div class="statement"><span class="u-watermark" aria-hidden="true"></span><span>Authentic assessment asks students to do tasks that resemble real tasks, in realistic contexts, with realistic constraints.</span></div>
+
+        <p>Wiggins (1990) argued for assessments that are &ldquo;engaging and worthy problems&rdquo;. Gulikers, Bastiaens and Kirschner (2004) proposed a five-dimensional framework for authentic assessment. It looks at:</p>
+        <ul>
+          <li>the <strong>task</strong>,</li>
+          <li>the <strong>physical context</strong>,</li>
+          <li>the <strong>social context</strong>,</li>
+          <li>the <strong>form</strong> of the assessment, and</li>
+          <li>the <strong>criteria</strong>.</li>
+        </ul>
+        <p>Sambell, McDowell and Montgomery (2013) show that students respond positively when assessment feels relevant to the world beyond the classroom, which in turn tends to support deeper approaches to learning.</p>
+
+        <div class="gate" data-gate></div>
+
+        <h2>Why does this matter for adult learners?</h2>
+        <p>Think of Knowles's work on andragogy (Knowles, 1984). Adult learners <strong>bring experience</strong>, <strong>want to know why</strong> they are learning something, and are <strong>motivated by problems they can use</strong>.</p>
+        <p>Many of our students are mature learners, part-time, upskilling or working while studying. They notice, and quickly, when an assessment has no connection to anything they will do.</p>
+
+        <h2>Four questions to ask about any task</h2>
+        <p>Select each card to reveal the question.</p>
+
+        <div class="flipgrid flipgrid--4" data-flip="authentic" role="group" aria-label="Four questions to ask about any task">
+          <button class="flip" type="button" aria-expanded="false">
+            <span class="flip__front">Realistic task?</span>
+            <span class="flip__hint">Select to reveal</span>
+            <span class="flip__back" hidden>Would a professional do something like this?</span>
+          </button>
+          <button class="flip" type="button" aria-expanded="false">
+            <span class="flip__front">Realistic audience?</span>
+            <span class="flip__hint">Select to reveal</span>
+            <span class="flip__back" hidden>Is it written or presented for someone other than the lecturer?</span>
+          </button>
+          <button class="flip" type="button" aria-expanded="false">
+            <span class="flip__front">Realistic constraints?</span>
+            <span class="flip__hint">Select to reveal</span>
+            <span class="flip__back" hidden>Time, budget, incomplete information, stakeholders.</span>
+          </button>
+          <button class="flip" type="button" aria-expanded="false">
+            <span class="flip__front">Realistic judgement?</span>
+            <span class="flip__hint">Select to reveal</span>
+            <span class="flip__back" hidden>Are the criteria similar to those a professional would use?</span>
+          </button>
+        </div>
+
+        <div class="gate" data-gate></div>
+
+        <figure class="figure figure--framed fig-spectrum">
+          <div class="spectrum" role="group" aria-label="Spectrum of assessment tasks from traditional to authentic">
+            <div class="spectrum__ends"><span>Traditional</span><span>Authentic</span></div>
+            <div class="spectrum__bar" aria-hidden="true"></div>
+            <ol class="spectrum__items">
+              <li>Essay</li>
+              <li>Closed-book exam</li>
+              <li>Client brief</li>
+              <li>Portfolio</li>
+              <li>Simulation</li>
+              <li>Case clinic</li>
+            </ol>
+          </div>
+          <figcaption>Most assessment sits somewhere along this line. The question is which way to move it.</figcaption>
+        </figure>
+
+        <h3>Examples across levels</h3>
+        <div class="deflist">
+          <div class="deflist__row"><div class="deflist__term">Level 7</div><div class="deflist__desc">Produce a practical technical report from a lab task or a workplace scenario, with a clear brief.</div></div>
+          <div class="deflist__row"><div class="deflist__term">Level 8</div><div class="deflist__desc">Prepare an evidence-informed policy brief, a project proposal with a risk analysis, or a professional portfolio with reflective commentary.</div></div>
+          <div class="deflist__row"><div class="deflist__term">Level 9</div><div class="deflist__desc">Complete a consultancy-style project for an external partner, with a critical review of literature and presentation to stakeholders.</div></div>
+        </div>
+
+        <div class="gate" data-gate></div>
+
+        <div class="callout callout--why">
+          <div class="callout__icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-users"></use></svg></div>
+          <div class="callout__body">
+            <p><strong>A word on fairness.</strong> Authentic does not mean unstructured. Make sure the task is accessible. Think about Universal Design for Learning (CAST, 2018): offer flexibility in how students demonstrate their learning where the outcome allows it. Be clear about what is being assessed and what is not. The National Forum's work on assessment emphasises inclusion and student partnership, so consider co-designing criteria with students.</p>
+          </div>
+        </div>
+
+        <div class="match" data-match="spectrum">
+          <div class="kc__tag"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-scale"></use></svg> Quick check &middot; Sort each task onto the spectrum</div>
+          <p style="color:var(--ink-soft)">Drag each task to <em>Less authentic</em> or <em>More authentic</em> &mdash; or select a task, then choose a box.</p>
+          <div class="match__grid">
+            <div>
+              <div class="match__col-title">Tasks</div>
+              <div class="tokens" id="spectrumTokens">
+                <div class="token" draggable="true" role="button" tabindex="0" data-token="t1" data-level="less">Closed-book recall test</div>
+                <div class="token" draggable="true" role="button" tabindex="0" data-token="t2" data-level="more">Writing a briefing note for a hospital manager, using real (anonymised) data</div>
+                <div class="token" draggable="true" role="button" tabindex="0" data-token="t3" data-level="less">Essay on a topic chosen by the lecturer, read only by the lecturer</div>
+                <div class="token" draggable="true" role="button" tabindex="0" data-token="t4" data-level="more">Presenting a proposal to an industry panel</div>
+              </div>
+            </div>
+            <div>
+              <div class="match__col-title">Where does it sit?</div>
+              <div class="drops">
+                <div class="drop" data-accept="less"><button class="drop__target" type="button" aria-label="Place the selected task in: Less authentic">Less authentic</button><span class="drop__slot"></span></div>
+                <div class="drop" data-accept="more"><button class="drop__target" type="button" aria-label="Place the selected task in: More authentic">More authentic</button><span class="drop__slot"></span></div>
+              </div>
+            </div>
+          </div>
+          <div class="match__actions">
+            <button class="btn btn--primary btn--sm" data-check>Check my answers</button>
+            <button class="btn btn--ghost btn--sm" data-reset>Reset</button>
+            <span class="kc__score" data-matchscore role="status"></span>
+          </div>
+        </div>
+
+        <div class="reflect" data-reflect="s3">
+          <div class="reflect__tag"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-pen"></use></svg> Bring your experience &middot; not scored</div>
+          <p class="reflect__prompt" id="reflect-s3">Describe one real task from your own professional or industry experience that you could adapt into a module assessment. Who is the audience? What does &lsquo;good&rsquo; look like in that workplace?</p>
+          <textarea aria-labelledby="reflect-s3" placeholder="Jot your thoughts here &mdash; saved only on this device&hellip;" style="min-height:120px"></textarea>
+          <div class="reflect__foot">
+            <span class="reflect__note">Just for your own thinking.</span>
+            <button class="reflect__save" type="button">Save note</button>
+          </div>
+        </div>
+
+        <div class="lesson-nav">
+          <button class="btn btn--ghost" data-prev><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow-left"></use></svg> <span class="long">Purpose and stakes</span></button>
+          <button class="btn btn--primary" data-next><span class="long">Rubrics &amp; feedback</span> <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow-right"></use></svg></button>
+        </div>
+      </section>
+      <!-- =================================================================
+           SECTION 5 — RUBRICS, MARKING SCHEMES AND FEEDBACK  (data-lesson="4")
+      ================================================================== -->
+      <section class="lesson" data-lesson="4" data-accent="2">
+      <header class="hero">
+          <span class="hero__crest crest-grad" aria-hidden="true"></span>
+          <div class="hero__panel u-panel grad-mesh">
+            <span class="eyebrow" data-hero-eyebrow><span class="u-mark" aria-hidden="true"></span> Section 5 of 7</span>
+            <h1 tabindex="-1">Rubrics, marking schemes and quality feedback</h1>
+            <p class="hero__meta">~5 min read</p>
+          </div>
+          <div class="hero__side" data-hero-side></div>
+        </header>
+
+        <div class="statement"><span class="u-watermark" aria-hidden="true"></span><span>You've designed a good task. Now, how will you judge it, and how will you tell students?</span></div>
+
+        <div class="deflist">
+          <div class="deflist__row">
+            <div class="deflist__term">Marking schemes</div>
+            <div class="deflist__desc">Typically list the points available and the expected content. They suit tasks with a defined correct answer, such as calculations or short technical answers.</div>
+          </div>
+          <div class="deflist__row">
+            <div class="deflist__term">Rubrics</div>
+            <div class="deflist__desc">Describe <strong>quality</strong>. They break a task into criteria and describe performance levels for each. They suit complex, open-ended tasks where judgement is needed, which is typical at Levels 8 and 9.</div>
+          </div>
+        </div>
+
+        <p>Reddy and Andrade (2010) review the evidence that rubrics can support learning and make judgement more transparent &mdash; <strong>provided they are used well and not just handed out</strong>.</p>
+
+        <h2>A sample analytic rubric</h2>
+        <div class="rubric-wrap" role="region" aria-label="Sample analytic rubric: four criteria across four performance levels" tabindex="0">
+          <table class="rubric">
+            <caption class="sr-only">Sample analytic rubric with four criteria and four performance levels</caption>
+            <thead>
+              <tr>
+                <th scope="col">Criterion</th>
+                <th scope="col">Excellent <span>(H1)</span></th>
+                <th scope="col">Good <span>(H2.1)</span></th>
+                <th scope="col">Satisfactory <span>(H2.2/3)</span></th>
+                <th scope="col">Not yet met</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Analysis of evidence</th>
+                <td data-level="Excellent">Critically evaluates multiple sources and justifies position</td>
+                <td data-level="Good">Evaluates several sources with some critique</td>
+                <td data-level="Satisfactory">Describes sources with limited critique</td>
+                <td data-level="Not yet met">Little or no analysis</td>
+              </tr>
+              <tr>
+                <th scope="row">Application to context</th>
+                <td data-level="Excellent">Insightful, context-specific recommendations</td>
+                <td data-level="Good">Relevant recommendations</td>
+                <td data-level="Satisfactory">General recommendations</td>
+                <td data-level="Not yet met">Not related to context</td>
+              </tr>
+              <tr>
+                <th scope="row">Communication to audience</th>
+                <td data-level="Excellent">Clear, concise, tailored to audience</td>
+                <td data-level="Good">Clear and mostly tailored</td>
+                <td data-level="Satisfactory">Understandable but generic</td>
+                <td data-level="Not yet met">Unclear</td>
+              </tr>
+              <tr>
+                <th scope="row">Referencing and evidence</th>
+                <td data-level="Excellent">Accurate, wide range</td>
+                <td data-level="Good">Accurate, adequate range</td>
+                <td data-level="Satisfactory">Some errors</td>
+                <td data-level="Not yet met">Inadequate</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="gate" data-gate></div>
+
+        <h3>Five tips for effective rubrics</h3>
+        <ol class="steps">
+          <li>Use <strong>four to six criteria</strong>. More becomes unwieldy.</li>
+          <li>Describe <strong>observable qualities</strong>, not vague words like &ldquo;good&rdquo;.</li>
+          <li>Make sure the criteria <strong>link back to the learning outcomes</strong>.</li>
+          <li><strong>Share the rubric</strong> when you set the task, and talk it through.</li>
+          <li>Try a short activity in which students <strong>apply the rubric to an anonymous example</strong>. This builds what Sadler (1989) called the ability to know what quality looks like.</li>
+        </ol>
+
+        <div class="gate" data-gate></div>
+
+        <h2>Feedback that students can act on</h2>
+        <p>Hattie and Timperley (2007) describe three questions that effective feedback answers:</p>
+        <div class="trio">
+          <div class="trio__item"><span class="trio__n">1</span><strong>Where am I going?</strong></div>
+          <div class="trio__item"><span class="trio__n">2</span><strong>How am I going?</strong></div>
+          <div class="trio__item"><span class="trio__n">3</span><strong>Where to next?</strong></div>
+        </div>
+        <p>Feedback that only justifies a grade rarely changes anything. The National Forum's work on feedback in Irish higher education stresses feedback as a dialogue and the importance of students acting on it. Carless and Boud (2018) describe this as developing students' &ldquo;feedback literacy&rdquo;.</p>
+
+        <div class="compare">
+          <div class="compare__head">
+            <span><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-x"></use></svg> Weak feedback</span>
+            <span><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check-circle"></use></svg> Stronger feedback</span>
+          </div>
+          <div class="compare__row">
+            <div>&ldquo;Needs more critical analysis. 62%.&rdquo;</div>
+            <div>&ldquo;Your summary of the three studies is accurate <em>(Where am I going: critical evaluation)</em>. You describe their findings but don't yet compare their methods <em>(How am I going)</em>. In the next assignment, try a short paragraph asking which study is most reliable and why <em>(Where to next)</em>.&rdquo;</div>
+          </div>
+        </div>
+
+        <div class="gate" data-gate></div>
+
+        <div class="kc" data-kc="kc4" data-type="single">
+          <div class="kc__tag"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"></use></svg> Knowledge check &middot; Scenario</div>
+          <p class="kc__q" id="kcq-kc4">A student receives the comment &ldquo;Good work, but needs more depth.&rdquo; Which revision best follows the <em>Where to next?</em> principle?</p>
+          <div class="kc__options" role="group" aria-labelledby="kcq-kc4">
+            <button class="opt" data-opt="A"><span class="opt__mark"><span class="opt__letter">A</span></span> &ldquo;Add more words.&rdquo;</button>
+            <button class="opt" data-opt="B" data-correct><span class="opt__mark"><span class="opt__letter">B</span></span> &ldquo;Choose one of your three points and explain the mechanism behind it, using at least one source.&rdquo;</button>
+            <button class="opt" data-opt="C"><span class="opt__mark"><span class="opt__letter">C</span></span> &ldquo;Try harder next time.&rdquo;</button>
+          </div>
+          <div class="kc__feedback" role="status" aria-live="polite"
+               data-good="This names a specific, achievable step the student can take in the next piece of work, and says what to use to take it."
+               data-bad="That doesn't tell the student what to do. A &lsquo;Where to next?&rsquo; comment names a specific, achievable step for the next piece of work."></div>
+          <div class="kc__footer"><button class="kc__retry" type="button"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-rotate"></use></svg> Try again</button></div>
+        </div>
+
+        <div class="callout callout--tip">
+          <div class="callout__icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-clock"></use></svg></div>
+          <div class="callout__body">
+            <p><strong>Practical tip: efficient feedback.</strong> Use comment banks, audio feedback, or a &ldquo;two strengths, one next step&rdquo; model. Ask students to respond to feedback, for example by writing a short action plan, before they see the grade.</p>
+          </div>
+        </div>
+
+        <div class="reflect" data-reflect="s4">
+          <div class="reflect__tag"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-pen"></use></svg> Reflection &middot; not scored</div>
+          <p class="reflect__prompt" id="reflect-s4">What do you find hardest about giving feedback? For example: time, tone, making it actionable, students not reading it &mdash; or something else.</p>
+          <textarea aria-labelledby="reflect-s4" placeholder="Name the hardest part, and why &mdash; saved only on this device&hellip;"></textarea>
+          <div class="reflect__foot">
+            <span class="reflect__note">Just for your own thinking.</span>
+            <button class="reflect__save" type="button">Save note</button>
+          </div>
+        </div>
+
+        <div class="lesson-nav">
+          <button class="btn btn--ghost" data-prev><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow-left"></use></svg> <span class="long">Authentic assessment</span></button>
+          <button class="btn btn--primary" data-next><span class="long">Assessment &amp; AI</span> <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow-right"></use></svg></button>
+        </div>
+      </section>
+
+      <!-- =================================================================
+           SECTION 6 — ASSESSMENT IN THE AGE OF AI  (data-lesson="5")
+      ================================================================== -->
+      <section class="lesson" data-lesson="5" data-accent="3">
+      <header class="hero">
+          <span class="hero__crest crest-grad" aria-hidden="true"></span>
+          <div class="hero__panel u-panel grad-mesh">
+            <span class="eyebrow" data-hero-eyebrow><span class="u-mark" aria-hidden="true"></span> Section 6 of 7</span>
+            <h1 tabindex="-1">Assessment in the age of AI</h1>
+            <p class="hero__meta">~5 min read</p>
+          </div>
+          <div class="hero__side" data-hero-side></div>
+        </header>
+
+        <div class="statement"><span class="u-watermark" aria-hidden="true"></span><span>Generative AI has changed what many of our traditional assessments measure. We need to respond thoughtfully, not out of panic.</span></div>
+
+        <p>A student can now produce a plausible essay, report or piece of code in minutes. Let's first look at the guidance.</p>
+
+        <div class="card">
+          <h2>What SETU's position says</h2>
+          <ul>
+            <li>Students' use of generative AI does <strong>not automatically constitute academic misconduct</strong>.</li>
+            <li>Staff are encouraged to evolve assessment design so that it emphasises <strong>authenticity, process, critical thinking and deeper learning</strong>, and it acknowledges that this may mean structural changes.</li>
+            <li>SETU's staff guidelines advise <strong>regularly reviewing assessment design</strong> and point to the N-TUTORR Assessment Redesign Framework as a resource.</li>
+            <li>Staff are also advised <strong>against relying on AI detection scores alone</strong> as evidence of misuse.</li>
+          </ul>
+        </div>
+
+        <p>At national level, the National Academic Integrity Network (NAIN, 2023) has published guidelines for educators on generative AI, and the National Forum has published a range of resources on digital assessment and academic integrity. Check current versions, as this guidance is updated regularly.</p>
+
+        <div class="callout callout--tip">
+          <div class="callout__icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-book-open"></use></svg></div>
+          <div class="callout__body">
+            <p><strong>Where to find the guidance.</strong> Links to the SETU, NAIN, QQI and National Forum material are collected under <em>Resources and references</em> in the final section.</p>
+          </div>
+        </div>
+
+        <div class="gate" data-gate></div>
+
+        <h2>Three practical responses</h2>
+
+        <h3>1. Be explicit</h3>
+        <p>Tell students whether AI is <strong>permitted, restricted or prohibited</strong> in each assessment, and why, in the assessment brief. If students don't know, they will guess.</p>
+        <p>Perkins, Furze, Roe and MacVaugh (2024) propose an AI Assessment Scale with levels from &ldquo;no AI&rdquo; through to &ldquo;AI exploration&rdquo;. You can adapt something like this so your modules are consistent, and mention it in the assessment brief.</p>
+
+        <figure class="figure figure--framed fig-aiscale">
+          <ol class="aiscale" aria-label="An adapted five-step scale of permitted AI use in an assessment">
+            <li class="aiscale__step"><span class="aiscale__n">1</span><strong>No AI</strong><span>The task is completed without AI.</span></li>
+            <li class="aiscale__step"><span class="aiscale__n">2</span><strong>Limited, named uses</strong><span>AI for specified supporting tasks only, and declared.</span></li>
+            <li class="aiscale__step"><span class="aiscale__n">3</span><strong>AI as a collaborator</strong><span>AI is part of the process, and students document how.</span></li>
+            <li class="aiscale__step"><span class="aiscale__n">4</span><strong>AI-led, human-judged</strong><span>AI produces; students evaluate, correct and improve.</span></li>
+            <li class="aiscale__step"><span class="aiscale__n">5</span><strong>Full AI use with critical evaluation</strong><span>AI use is expected; the judgement is the student's.</span></li>
+          </ol>
+          <figcaption>An illustrative scale in the spirit of Perkins et al. (2024). Adapt the wording to your institution's guidance.</figcaption>
+        </figure>
+        <p class="placeholder-note">[Confirm the intermediate step names against the published AI Assessment Scale, or your institution's adaptation of it, before publishing.]</p>
+
+        <div class="gate" data-gate></div>
+
+        <h3>2. Redesign for process and judgement</h3>
+        <p>Assessments that are harder to outsource are also usually <strong>better assessments</strong>. For example:</p>
+        <ul>
+          <li>Ask for <strong>drafts, annotated process logs</strong> and reflection on decisions made.</li>
+          <li>Use <strong>personalised or local data</strong>, workplace case studies or a placement context. This links directly to the authentic principles in Section 4.</li>
+          <li>Include a short <strong>viva or oral defence</strong> at Levels 8 and 9, to confirm understanding.</li>
+          <li>Ask students to <strong>critique an AI-generated response</strong>, using the rubric. This builds evaluative judgement, which is a Level 8 and 9 skill.</li>
+        </ul>
+
+        <h3>3. Use secured assessment where it counts</h3>
+        <p>For some outcomes, such as core professional competences, a supervised or live assessment is appropriate. Lodge, Howard, Bearman, Dawson and Associates (2023), writing for Australia's regulator TEQSA, argue for a <strong>mix of secured and open assessment</strong>. Not every assessment needs to be locked down, but some should be.</p>
+
+        <div class="callout callout--why">
+          <div class="callout__icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-warning"></use></svg></div>
+          <div class="callout__body">
+            <p><strong>What not to do.</strong> Don't rely on AI detectors as proof. They are unreliable and can disadvantage some students, including those writing in a second language. If you have concerns, SETU's approach is to look at the whole picture, including how the work was produced, and to follow the formal academic integrity procedures.</p>
+          </div>
+        </div>
+
+        <div class="gate" data-gate></div>
+
+        <div class="kc" data-kc="kc5" data-type="single">
+          <div class="kc__tag"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"></use></svg> Knowledge check &middot; Scenario</div>
+          <p class="kc__q" id="kcq-kc5">Your Level 8 module has a 3,000-word essay worth 50%. Which change would best strengthen the assessment in light of AI?</p>
+          <div class="kc__options" role="group" aria-labelledby="kcq-kc5">
+            <button class="opt" data-opt="A"><span class="opt__mark"><span class="opt__letter">A</span></span> Add an AI detector to your marking process</button>
+            <button class="opt" data-opt="B"><span class="opt__mark"><span class="opt__letter">B</span></span> Ban all digital devices for the essay</button>
+            <button class="opt" data-opt="C" data-correct><span class="opt__mark"><span class="opt__letter">C</span></span> Add a staged submission with a draft, a short reflection on process and a brief oral discussion</button>
+            <button class="opt" data-opt="D"><span class="opt__mark"><span class="opt__letter">D</span></span> Make the essay longer</button>
+          </div>
+          <div class="kc__feedback" role="status" aria-live="polite"
+               data-good="This builds process, judgement and understanding into the task. Detectors alone are not reliable evidence."
+               data-bad="Detectors alone are not reliable evidence, a device ban doesn't change what the essay measures, and a longer essay makes the same task bigger rather than stronger. Building process, judgement and understanding into the task does."></div>
+          <div class="kc__footer"><button class="kc__retry" type="button"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-rotate"></use></svg> Try again</button></div>
+        </div>
+
+        <div class="reflect" data-reflect="s5">
+          <div class="reflect__tag"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-pen"></use></svg> Bring your experience &middot; not scored</div>
+          <p class="reflect__prompt" id="reflect-s5">Think about how AI tools are already used in your industry. What would a graduate be expected to do with AI at work? Should your assessment let students show that, with critical judgement, rather than avoiding AI altogether?</p>
+          <textarea aria-labelledby="reflect-s5" placeholder="Jot your thoughts here &mdash; saved only on this device&hellip;" style="min-height:120px"></textarea>
+          <div class="reflect__foot">
+            <span class="reflect__note">Just for your own thinking.</span>
+            <button class="reflect__save" type="button">Save note</button>
+          </div>
+        </div>
+
+        <div class="lesson-nav">
+          <button class="btn btn--ghost" data-prev><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow-left"></use></svg> <span class="long">Rubrics &amp; feedback</span></button>
+          <button class="btn btn--primary" data-next><span class="long">Summary</span> <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow-right"></use></svg></button>
+        </div>
+      </section>
+      <!-- =================================================================
+           SECTION 7 — SUMMARY & REFLECTIVE ACTIVITY  (data-lesson="6")
+      ================================================================== -->
+      <section class="lesson" data-lesson="6" data-accent="1">
+      <header class="hero">
+          <span class="hero__crest crest-grad" aria-hidden="true"></span>
+          <div class="hero__panel u-panel grad-mesh">
+            <span class="eyebrow" data-hero-eyebrow><span class="u-mark" aria-hidden="true"></span> Section 7 of 7</span>
+            <h1 tabindex="-1">Summary and reflective activity</h1>
+            <p class="hero__meta">~2 min read</p>
+          </div>
+          <div class="hero__side" data-hero-side></div>
+        </header>
+
+        <div class="statement"><span class="u-watermark" aria-hidden="true"></span><span>Let's pull it together.</span></div>
+
+        <ol class="steps steps--recap">
+          <li><strong>Align.</strong> Outcomes, activities and assessment need to point the same way, and the size of the task needs to fit the credits.</li>
+          <li><strong>Balance purpose and stakes.</strong> Use formative, low-stakes opportunities to prepare students for high-stakes moments.</li>
+          <li><strong>Make it authentic.</strong> Especially for adult learners, relevance drives engagement and deeper learning.</li>
+          <li><strong>Make judgement visible.</strong> Rubrics and feedback that students can act on.</li>
+          <li><strong>Respond to AI with design.</strong> Be explicit, assess process and judgement, and secure what you must.</li>
+        </ol>
+
+        <div class="gate" data-gate></div>
+
+        <h2>Resources and references</h2>
+
+        <h3>Irish and institutional guidance</h3>
+        <ul class="reflist">
+          <li>National Forum for the Enhancement of Teaching and Learning (2017). <em>Expanding our Understanding of Assessment and Feedback in Irish Higher Education</em>, and related National Forum resources on assessment of, for and as learning. <a href="https://teachingandlearning.ie" rel="noopener noreferrer" target="_blank">teachingandlearning.ie</a></li>
+          <li>QQI. <em>Awards Standards</em> and <em>Assessment and Standards</em> guidelines. <a href="https://qqi.ie" rel="noopener noreferrer" target="_blank">qqi.ie</a></li>
+          <li>N-TUTORR Assessment Redesign Framework (referenced in SETU staff guidance).</li>
+          <li>SETU. <em>Position Statement on the Use of Generative AI</em> and <em>Staff Guidelines on the Use of Generative AI</em>. <a href="https://ai.setu.ie" rel="noopener noreferrer" target="_blank">ai.setu.ie</a></li>
+          <li>National Academic Integrity Network (NAIN) (2023). <em>Generative Artificial Intelligence: Guidelines for Educators.</em> <a href="https://qqi.ie" rel="noopener noreferrer" target="_blank">qqi.ie</a></li>
+        </ul>
+        <p class="placeholder-note">[Add your institution's own assessment regulations or programme handbook, including any workload or word-count equivalencies, and check that every link and document version is current before publishing.]</p>
+
+        <h3>Research and frameworks</h3>
+        <ol class="refcite">
+          <li>Anderson, L. and Krathwohl, D. (eds) (2001). <em>A Taxonomy for Learning, Teaching, and Assessing.</em> Longman.</li>
+          <li>Biggs, J. (1996). Enhancing teaching through constructive alignment. <em>Higher Education</em>, 32, 347&ndash;364.</li>
+          <li>Biggs, J. and Tang, C. (2011). <em>Teaching for Quality Learning at University.</em> 4th edn. Open University Press.</li>
+          <li>Black, P. and Wiliam, D. (1998). Assessment and classroom learning. <em>Assessment in Education</em>, 5(1), 7&ndash;74.</li>
+          <li>CAST (2018). <em>Universal Design for Learning Guidelines</em> v2.2.</li>
+          <li>Carless, D. and Boud, D. (2018). The development of student feedback literacy. <em>Assessment &amp; Evaluation in Higher Education</em>, 43(8), 1315&ndash;1325.</li>
+          <li>European Commission (2015). <em>ECTS Users' Guide.</em> Luxembourg: Publications Office of the European Union.</li>
+          <li>Gulikers, J., Bastiaens, T. and Kirschner, P. (2004). A five-dimensional framework for authentic assessment. <em>Educational Technology Research and Development</em>, 52(3), 67&ndash;86.</li>
+          <li>Hattie, J. and Timperley, H. (2007). The power of feedback. <em>Review of Educational Research</em>, 77(1), 81&ndash;112.</li>
+          <li>Knowles, M. (1984). <em>The Adult Learner: A Neglected Species.</em> Gulf Publishing.</li>
+          <li>Lodge, J., Howard, S., Bearman, M., Dawson, P. and Associates (2023). <em>Assessment reform for the age of artificial intelligence.</em> TEQSA.</li>
+          <li>Nicol, D. and Macfarlane-Dick, D. (2006). Formative assessment and self-regulated learning. <em>Studies in Higher Education</em>, 31(2), 199&ndash;218.</li>
+          <li>Perkins, M., Furze, L., Roe, J. and MacVaugh, J. (2024). The Artificial Intelligence Assessment Scale (AIAS). <em>Journal of University Teaching and Learning Practice</em>, 21(6).</li>
+          <li>Reddy, Y. and Andrade, H. (2010). A review of rubric use in higher education. <em>Assessment &amp; Evaluation in Higher Education</em>, 35(4), 435&ndash;448.</li>
+          <li>Sadler, D. R. (1989). Formative assessment and the design of instructional systems. <em>Instructional Science</em>, 18, 119&ndash;144.</li>
+          <li>Sambell, K., McDowell, L. and Montgomery, C. (2013). <em>Assessment for Learning in Higher Education.</em> Routledge.</li>
+        </ol>
+
+        <div class="gate" data-gate></div>
+
+        <h2>Your action plan</h2>
+        <p>Look back at your answer to the first question, about an assessment that worked. Then complete these three sentences.</p>
+
+        <div class="echo" data-echo="s0">
+          <span class="echo__k">Your answer at the start</span>
+          <p class="echo__text"></p>
+        </div>
+
+        <div class="reflect" data-reflect="plan1">
+          <div class="reflect__tag"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-pen"></use></svg> Your action plan &middot; 1 of 3 &middot; not submitted</div>
+          <p class="reflect__prompt" id="reflect-plan1">One assessment I will review is&hellip;</p>
+          <textarea aria-labelledby="reflect-plan1" placeholder="Name the module and the assessment &mdash; saved only on this device&hellip;" style="min-height:84px"></textarea>
+          <div class="reflect__foot">
+            <span class="reflect__note">For your own planning.</span>
+            <button class="reflect__save" type="button">Save note</button>
+          </div>
+        </div>
+
+        <div class="reflect" data-reflect="plan2">
+          <div class="reflect__tag"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-pen"></use></svg> Your action plan &middot; 2 of 3 &middot; not submitted</div>
+          <p class="reflect__prompt" id="reflect-plan2">The first change I will make is&hellip;</p>
+          <textarea aria-labelledby="reflect-plan2" placeholder="Be specific &mdash; one change you could make this semester&hellip;" style="min-height:84px"></textarea>
+          <div class="reflect__foot">
+            <span class="reflect__note">For your own planning.</span>
+            <button class="reflect__save" type="button">Save note</button>
+          </div>
+        </div>
+
+        <div class="reflect" data-reflect="plan3">
+          <div class="reflect__tag"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-pen"></use></svg> Your action plan &middot; 3 of 3 &middot; not submitted</div>
+          <p class="reflect__prompt" id="reflect-plan3">One industry or professional example I will draw on is&hellip;</p>
+          <textarea aria-labelledby="reflect-plan3" placeholder="A task, a standard, a client, a case&hellip;" style="min-height:84px"></textarea>
+          <div class="reflect__foot">
+            <span class="reflect__note">For your own planning.</span>
+            <button class="reflect__save" type="button">Save note</button>
+          </div>
+        </div>
+
+        <div class="gate" data-gate></div>
+        <!-- Progress dashboard -->
+        <div class="widget dashboard" data-dashboard>
+          <div class="kc__tag"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-chart"></use></svg> Your progress summary</div>
+          <div class="dashboard__tiles">
+            <div class="dash-tile"><div class="dash-num" id="dashSections">0/7</div><div class="dash-lbl">Sections viewed</div></div>
+            <div class="dash-tile"><div class="dash-num" id="dashReflections">0/10</div><div class="dash-lbl">Reflections written</div></div>
+            <div class="dash-tile"><div class="dash-num" id="dashActs">0/6</div><div class="dash-lbl">Activities explored</div></div>
+          </div>
+          <div class="dashboard__status" id="dashStatus" role="status"></div>
+          <div class="dashboard__actions">
+            <button class="btn btn--sm" id="exportNotes" type="button"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-download"></use></svg> Download my responses</button>
+          </div>
+        </div>
+
+        <!-- Completion -->
+        <div class="complete">
+          <span class="u-watermark" aria-hidden="true"></span>
+          <div class="complete__badge" aria-hidden="true"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-cap"></use></svg></div>
+          <h2>Thank you for taking part.</h2>
+          <p>Assessment is one of the most powerful levers we have to shape how students learn, and small, well-chosen changes can make a real difference.</p>
+          <div style="margin-top:20px">
+            <button class="btn btn--primary" id="finishBtn" type="button"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"></use></svg> Mark course complete</button>
+          </div>
+        </div>
+
+        <div class="lesson-nav">
+          <button class="btn btn--ghost" data-prev><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow-left"></use></svg> <span class="long">Assessment &amp; AI</span></button>
+          <button class="btn" id="restartBtn" type="button"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-rotate"></use></svg> Back to start</button>
+        </div>
+      </section>
+
+    </main><!-- /content-scroll -->
+  </div><!-- /main -->
+</div><!-- /app -->
+
+<script src="js/course.config.js"></script>
+<script src="js/core.js"></script>
+<script src="js/scorm.js"></script>
+<script src="js/analytics.js"></script>
+<script src="js/animations.js"></script>
+<script src="js/confetti.js"></script>
+<script src="js/interactions.js"></script>
+<script src="js/dashboard.js"></script>
+<script src="js/rise.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
